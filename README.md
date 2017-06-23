@@ -6,7 +6,7 @@ Just install the app update your token in app and start using it.
 ### 1. git clone `https://github.com/GeekyAnts/react-native-chat-example.git`
 ### 2. cd react-native-chat-example
 ### 3. npm install / yarn [whichever you prefer].
-### 4. update your token. Follow steps on the [Website](react-native-chat.com) to generate your Token.
+### 4. update your token. Follow steps on the [Website](https://react-native-chat.com) to generate your Token.
 ```
   constructor(props) {
     super(props);
