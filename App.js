@@ -11,13 +11,14 @@ export default class App extends React.Component {
     this.state = {
       isLoading: false,
       isLoggedIn: false,
-      token: "Token11", // Your App Token.
+      token: "Your App Token", // Your App Token.
       userData: {}
     };
   }
 
   componentWillMount() {
-    setToken("Token11");
+    // AsyncStorage.clear();
+    setToken("Your App Token");
   }
 
   async componentDidMount() {
@@ -40,7 +41,7 @@ export default class App extends React.Component {
 
   loginPress = async data => {
     const userData = {
-      token: "Token11",
+      token: this.state.token,
       uniqueKey: data.uniqueKey,
       displayName: data.displayName
     };
@@ -51,6 +52,7 @@ export default class App extends React.Component {
         JSON.stringify(userDetails),
         async () => {
           await AsyncStorage.setItem("userExists", "true");
+          this.setState({ isLoggedIn: true });
         }
       );
     }
