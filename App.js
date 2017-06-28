@@ -51,6 +51,11 @@ export default class App extends React.Component {
         "userData",
         JSON.stringify(userDetails),
         async () => {
+          data = {
+            displayName: data.displayName,
+            uniqueKey: data.uniqueKey
+          };
+          this.setState({ userData: data });
           await AsyncStorage.setItem("userExists", "true");
           this.setState({ isLoggedIn: true });
         }
