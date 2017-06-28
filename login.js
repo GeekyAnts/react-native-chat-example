@@ -28,7 +28,7 @@ export default class Login extends React.Component {
 
   render() {
     return (
-      <Container>
+      <Container style={{ marginTop: 22 }}>
         <Header>
           <Left />
           <Body>
@@ -47,6 +47,7 @@ export default class Login extends React.Component {
               <Label>Username</Label>
               <Input
                 onChangeText={text => this.setState({ uniqueKey: text })}
+                style={{ paddingLeft: 5 }}
                 value={this.state.uniqueKey}
               />
             </Item>
@@ -54,6 +55,7 @@ export default class Login extends React.Component {
               <Label>Display Name</Label>
               <Input
                 onChangeText={text => this.setState({ displayName: text })}
+                style={{ paddingLeft: 5 }}
                 value={this.state.displayName}
               />
             </Item>
