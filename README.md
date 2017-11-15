@@ -1,3 +1,7 @@
+# React Native Chat Example
+
+### This Repo is deprecated
+
 An example app for [react-native-chat](https://github.com/GeekyAnts/react-native-chat) 
 Just install the app update your token in app and start using it. 
 
